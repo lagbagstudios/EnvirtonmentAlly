@@ -1,0 +1,3 @@
+extends PlayerState
+
+# WALK HORIZONTALLY
