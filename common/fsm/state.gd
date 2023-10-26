@@ -9,8 +9,8 @@ func _ready() -> void:
 func run(_delta: float) -> String:
 	return ""
 
-func enter(_previous: String) -> void:
-	print_debug("In state: ", tag, ", From state: ", _previous)
+func enter() -> void:
+	pass
 
 func exit() -> void:
 	pass

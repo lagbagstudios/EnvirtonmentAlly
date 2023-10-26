@@ -6,7 +6,6 @@ var current_state: State
 
 var next_state: State
 var next_state_tag: String
-var previous_state_tag: String
 
 func init_states() -> void:
 	for state in get_children():
@@ -21,10 +20,9 @@ func run(delta: float) -> void:
 func change_state(next_tag: String) -> void:
 	next_state = states.get(next_tag)
 	if next_state:
-		previous_state_tag = current_state.tag
 		current_state.exit()
 		current_state = next_state
-		current_state.enter(previous_state_tag)
+		current_state.enter()
 
 func _ready() -> void:
 	init_states()
