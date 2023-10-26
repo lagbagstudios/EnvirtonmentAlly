@@ -10,7 +10,7 @@ func run(_delta: float) -> String:
 	return ""
 
 func enter(_previous: String) -> void:
-	print("In state: ", tag, ", From state: ", _previous)
+	print_debug("In state: ", tag, ", From state: ", _previous)
 
 func exit() -> void:
 	pass
