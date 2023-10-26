@@ -23,3 +23,7 @@ func change_state(next_tag: String) -> void:
 		current_state.exit()
 		current_state = next_state
 		current_state.enter()
+
+func _ready() -> void:
+	init_states()
+	current_state = get_child(0)
