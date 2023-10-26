@@ -7,7 +7,7 @@
 [ext_resource type="Script" path="res://scenes/characters/main_character/scripts/walk_h.gd" id="4_fqorr"]
 [ext_resource type="Script" path="res://scenes/characters/main_character/scripts/walk_v.gd" id="5_np8je"]
 
-[node name="MainCharacter" type="Node2D"]
+[node name="MainCharacter" type="CharacterBody2D"]
 script = ExtResource("1_ileql")
 metadata/_edit_group_ = true
 
