@@ -2,7 +2,6 @@ extends CharacterBody2D
 class_name Player
 
 @export var movement_speed = 25.0
-@export_range(0, 1.0) var acceleration = 0.5
 
 @onready var state_machine: StateMachine = $States
 @onready var sprite: Sprite2D = $Sprite2D
