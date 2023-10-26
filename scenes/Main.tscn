@@ -5,4 +5,4 @@
 [node name="Main" type="Node2D"]
 
 [node name="MainCharacter" parent="." instance=ExtResource("1_p5fbt")]
-position = Vector2(4, 2)
+position = Vector2(191, 127)
