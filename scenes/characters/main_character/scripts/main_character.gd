@@ -15,9 +15,5 @@ func move() -> void:
 
 func _physics_process(delta):
 	state_machine.run(delta)
-	if (direction.x < 0):
-		sprite.flip_h = false
-	if (direction.x > 0):
-		sprite.flip_h = true
 	position += velocity * delta
 	move_and_slide()

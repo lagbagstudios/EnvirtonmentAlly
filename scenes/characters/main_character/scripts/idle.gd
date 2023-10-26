@@ -1,7 +1,5 @@
 extends PlayerState
 
-# IDLE
-
 func run(delta: float) -> String:
 	if (get_input() != Vector2.ZERO):
 		return "walk"
