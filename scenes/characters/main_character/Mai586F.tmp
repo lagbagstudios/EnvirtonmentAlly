@@ -1,0 +1,43 @@
+[gd_scene load_steps=8 format=3 uid="uid://bm7rtavsetqys"]
+
+[ext_resource type="Texture2D" uid="uid://c5g5x0mb71jhj" path="res://assets/rpg_urban_packed.png" id="1_b8o1t"]
+[ext_resource type="Script" path="res://scenes/characters/main_character/scripts/main_character.gd" id="1_ileql"]
+[ext_resource type="Script" path="res://common/fsm/state_machine.gd" id="2_5pbl4"]
+[ext_resource type="Script" path="res://scenes/characters/main_character/scripts/idle.gd" id="3_paegg"]
+[ext_resource type="Script" path="res://scenes/characters/main_character/scripts/walk_h.gd" id="4_fqorr"]
+[ext_resource type="Script" path="res://scenes/characters/main_character/scripts/walk_v.gd" id="5_np8je"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ddda4"]
+radius = 4.0
+height = 14.0
+
+[node name="MainCharacter" type="CharacterBody2D"]
+script = ExtResource("1_ileql")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_b8o1t")
+hframes = 27
+vframes = 18
+frame = 23
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("CapsuleShape2D_ddda4")
+
+[node name="States" type="Node" parent="."]
+script = ExtResource("2_5pbl4")
+
+[node name="Idle" type="Node" parent="States"]
+script = ExtResource("3_paegg")
+tag = "idle"
+
+[node name="WalkH" type="Node" parent="States"]
+script = ExtResource("4_fqorr")
+tag = "walk_h"
+
+[node name="WalkV" type="Node" parent="States"]
+script = ExtResource("5_np8je")
+tag = "walk_v"
