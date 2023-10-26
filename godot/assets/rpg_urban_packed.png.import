@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d4lyjetirqpaf"
-path="res://.godot/imported/Silly_Placeholders.png-85eae316b42a79728e5e5778ea33391c.ctex"
+uid="uid://c5g5x0mb71jhj"
+path="res://.godot/imported/rpg_urban_packed.png-833637c0008c2d4393a03e6443b335a6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/Silly_Placeholders.png"
-dest_files=["res://.godot/imported/Silly_Placeholders.png-85eae316b42a79728e5e5778ea33391c.ctex"]
+source_file="res://assets/rpg_urban_packed.png"
+dest_files=["res://.godot/imported/rpg_urban_packed.png-833637c0008c2d4393a03e6443b335a6.ctex"]
 
 [params]
 
@@ -31,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1
