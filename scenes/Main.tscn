@@ -1,8 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://bgr0j3vrochr7"]
+[gd_scene load_steps=3 format=3 uid="uid://bgr0j3vrochr7"]
 
+[ext_resource type="PackedScene" uid="uid://t5v4s1ky4c8l" path="res://scenes/world/Town.tscn" id="1_ho8y0"]
 [ext_resource type="PackedScene" uid="uid://bm7rtavsetqys" path="res://scenes/characters/main_character/MainCharacter.tscn" id="1_p5fbt"]
 
 [node name="Main" type="Node2D"]
 
+[node name="Town" parent="." instance=ExtResource("1_ho8y0")]
+
 [node name="MainCharacter" parent="." instance=ExtResource("1_p5fbt")]
-position = Vector2(191, 127)
+position = Vector2(176, 96)
