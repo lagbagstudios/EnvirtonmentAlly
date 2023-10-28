@@ -132,11 +132,14 @@ _data = {
 }
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ddda4"]
-radius = 4.0
-height = 14.0
+radius = 5.0
+height = 12.0
 
 [node name="MainCharacter" type="CharacterBody2D"]
+z_as_relative = false
+y_sort_enabled = true
 script = ExtResource("1_ileql")
+movement_speed = 35.0
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -151,7 +154,8 @@ libraries = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 1)
+position = Vector2(0, 3)
+rotation = 1.5708
 shape = SubResource("CapsuleShape2D_ddda4")
 
 [node name="States" type="Node" parent="."]
