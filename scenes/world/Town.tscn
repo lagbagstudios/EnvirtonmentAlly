@@ -6,17 +6,17 @@
 [node name="Town" type="Node2D"]
 y_sort_enabled = true
 metadata/_edit_vertical_guides_ = [-157.0, 620.0]
-metadata/_edit_horizontal_guides_ = [300.0, -123.0]
+metadata/_edit_horizontal_guides_ = [300.0, -130.0]
 
 [node name="TownTileMap" parent="." instance=ExtResource("1_6e3e5")]
 
 [node name="MainCharacter" parent="." instance=ExtResource("2_7nqf1")]
 z_as_relative = true
-position = Vector2(381, 166)
+position = Vector2(-117, -94)
 
 [node name="Camera2D" type="Camera2D" parent="MainCharacter"]
 zoom = Vector2(1.5, 1.5)
 limit_left = -157
-limit_top = -124
+limit_top = -130
 limit_right = 620
 limit_bottom = 300

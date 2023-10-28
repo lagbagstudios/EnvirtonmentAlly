@@ -7,3 +7,4 @@ metadata/_edit_vertical_guides_ = [-160.0, 624.0]
 metadata/_edit_horizontal_guides_ = [-128.0, 304.0]
 
 [node name="Town" parent="." instance=ExtResource("1_ho8y0")]
+metadata/_edit_horizontal_guides_ = [300.0, -123.0]
