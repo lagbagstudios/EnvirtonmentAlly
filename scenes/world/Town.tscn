@@ -12,7 +12,7 @@ metadata/_edit_horizontal_guides_ = [300.0, -130.0]
 
 [node name="MainCharacter" parent="." instance=ExtResource("2_7nqf1")]
 z_as_relative = true
-position = Vector2(-117, -94)
+position = Vector2(263, 186)
 
 [node name="Camera2D" type="Camera2D" parent="MainCharacter"]
 zoom = Vector2(1.5, 1.5)
