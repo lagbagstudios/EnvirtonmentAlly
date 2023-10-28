@@ -4,7 +4,7 @@ func run(delta: float) -> String:
 	input = get_input()
 	if (input == Vector2.ZERO):
 		return "idle"
-	player.direction = input
+
 	player.move()
 
 	if (player.direction.x < 0):
